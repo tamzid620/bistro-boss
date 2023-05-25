@@ -6,6 +6,7 @@ import Layout from "../Layout/Layout";
 import Home from "../pages/Home/Home/Home";
 import Menu from "../pages/Menu/Menu/Menu";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Order from "../pages/Order/Order/Order";
 
 
  export const router = createBrowserRouter([
@@ -20,8 +21,12 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
         },
         {
           path:'menu',
-          element:<Menu></Menu>
-        }
+          element:<Menu></Menu>,
+        },
+        {
+          path:'order',
+          element:<Order></Order>,
+        },
       ]
     },
   ]);

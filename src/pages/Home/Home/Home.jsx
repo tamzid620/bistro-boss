@@ -1,4 +1,4 @@
-import Hooks from "../../../Hooks/Hooks";
+import useHooks from "../../../Hooks/useHooks";
 import Banner from "../Banner/Banner";
 import Categoty from "../Categoty/Categoty";
 import Feathured from "../Feathured/Feathured";
@@ -7,7 +7,7 @@ import Testimonial from "../Testimonial/Testimonial";
 
 
 const Home = () => {
-    Hooks('Home')
+    useHooks('Home')
     return (
         <div>
             <Banner></Banner>

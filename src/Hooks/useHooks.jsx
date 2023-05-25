@@ -1,9 +1,9 @@
 import { useEffect } from "react"
 
-const Hooks = title => {
+const useHooks = title => {
     useEffect(()=> {
         document.title = ` ${title} - Handy Toy `;
     }, [title])
 };
 
-export default Hooks;
+export default useHooks;
