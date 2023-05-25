@@ -1,3 +1,4 @@
+import Hooks from "../../../Hooks/Hooks";
 import Banner from "../Banner/Banner";
 import Categoty from "../Categoty/Categoty";
 import Feathured from "../Feathured/Feathured";
@@ -6,6 +7,7 @@ import Testimonial from "../Testimonial/Testimonial";
 
 
 const Home = () => {
+    Hooks('Home')
     return (
         <div>
             <Banner></Banner>
