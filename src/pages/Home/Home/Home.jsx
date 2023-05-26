@@ -7,7 +7,7 @@ import Testimonial from "../Testimonial/Testimonial";
 
 
 const Home = () => {
-    useHooks('Home')
+    useHooks('Bistro Boss | Home ')
     return (
         <div>
             <Banner></Banner>
