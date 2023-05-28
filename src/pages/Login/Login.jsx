@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 import { AuthContext } from '../../Providers/AuthProviders';
 import {  useLocation, useNavigate } from 'react-router-dom';
-// import Swal from 'sweetalert2'
+import useHooks from '../../Hooks/useHooks';
+import Swal from 'sweetalert2'
 
 const Login = () => {
+    useHooks('Bistro Boss | Login ')
     const [disabled, setDisabled] = useState(true);
     const {signIn} = useContext(AuthContext);
     const navigate = useNavigate();
@@ -27,15 +29,15 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                // Swal.fire({
-                //     title: 'User Login Successful.',
-                //     showClass: {
-                //         popup: 'animate__animated animate__fadeInDown'
-                //     },
-                //     hideClass: {
-                //         popup: 'animate__animated animate__fadeOutUp'
-                //     }
-                // });
+                Swal.fire({
+                    title: 'User Login Successful.',
+                    showClass: {
+                        popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOutUp'
+                    }
+                });
                 navigate(from, { replace: true });
             })
     }
@@ -83,10 +85,11 @@ const Login = () => {
 
                             </div>
                             <div className="form-control mt-6">
-                                <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
+                                {/* false er jaigai disable hobe  */}
+                                <input disabled={false} className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
-                        <p><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
+                        <p><small>New Here? <Link to="/register">Create an account</Link> </small></p>
                     </div>
                 </div>
             </div>
