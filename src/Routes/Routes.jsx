@@ -1,7 +1,4 @@
-
-import {
-    createBrowserRouter
-  } from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 import Layout from "../Layout/Layout";
 import Home from "../pages/Home/Home/Home";
 import Menu from "../pages/Menu/Menu/Menu";
@@ -11,6 +8,8 @@ import Login from "../pages/Login/Login"
 import Register from "../pages/Register/Registe";
 import Secret from "../pages/shared/Secret/Secret";
 import PrivateRoutes from "./PrivateRoutes";
+import MYCart from "../pages/Dashboard/MyCart/MYCart";
+import Dashboard from "../Layout/Dashboard";
 
 
  export const router = createBrowserRouter([
@@ -40,9 +39,20 @@ import PrivateRoutes from "./PrivateRoutes";
           element: <Register></Register>,
         },
         {
-          path: '/secret',
-          element: <PrivateRoutes><Secret></Secret></PrivateRoutes>,
-        },
+          path: 'secret',
+          element: <PrivateRoutes><Secret></Secret></PrivateRoutes>
+        }
       ]
     },
+    {
+      path: 'dashboard',
+      element: <PrivateRoutes><Dashboard></Dashboard></PrivateRoutes>, 
+      children: [
+        {
+          path: 'mycart', 
+          element: <MYCart></MYCart>
+        }
+      ]
+    }
+
   ]);

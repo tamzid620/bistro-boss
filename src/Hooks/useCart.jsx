@@ -1,6 +1,7 @@
-import { useQuery } from '@tanstack/react-query'
+// import { useQuery } from '@tanstack/react-query'
 import { useContext } from 'react';
 import { AuthContext } from '../Providers/AuthProviders';
+import { useQuery } from '@tanstack/react-query';
 const useCart = () => {
     const { user } = useContext(AuthContext);
 
@@ -16,3 +17,4 @@ const useCart = () => {
 
 }
 export default useCart;
+
