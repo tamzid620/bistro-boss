@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { FaShoppingCart, FaWallet, FaCalendarAlt, FaHome } from 'react-icons/fa';
-import useCart from "../hooks/useCart";
+import useCart from "../Hooks/useCart";
 
 const Dashboard = () => {
     const [cart] = useCart();

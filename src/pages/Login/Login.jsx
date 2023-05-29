@@ -5,6 +5,7 @@ import { AuthContext } from '../../Providers/AuthProviders';
 import {  useLocation, useNavigate } from 'react-router-dom';
 import useHooks from '../../Hooks/useHooks';
 import Swal from 'sweetalert2'
+import SocialLogin from '../shared/SocialLogin/SocialLogin';
 
 const Login = () => {
     useHooks('Bistro Boss | Login ')
@@ -90,6 +91,7 @@ const Login = () => {
                             </div>
                         </form>
                         <p><small>New Here? <Link to="/register">Create an account</Link> </small></p>
+                        <SocialLogin></SocialLogin>
                     </div>
                 </div>
             </div>
