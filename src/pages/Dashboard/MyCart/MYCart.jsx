@@ -1,7 +1,7 @@
 import { FaTrashAlt } from "react-icons/fa";
 import Swal from "sweetalert2";
 import useHooks from "../../../Hooks/useHooks";
-import useCart from "../../../hooks/useCart";
+import useCart from "../../../Hooks/useCart";
 
 const MYCart = () => {
     useHooks('Bistro Boss | MyCart ')

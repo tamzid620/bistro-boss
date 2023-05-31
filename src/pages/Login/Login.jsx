@@ -86,7 +86,7 @@ const Login = () => {
 
                             </div>
                             <div className="form-control mt-6">
-                                {/* false er jaigai disable hobe  */}
+                                {/* TODO: input e false na hoiya disable hobe */}
                                 <input disabled={false} className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
