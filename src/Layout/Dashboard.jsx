@@ -24,12 +24,12 @@ const Dashboard = () => {
                     {
                         isAdmin ? <>
 
-                            <li><NavLink to="/dashboard/home"><FaHome/> ADMIN HOME</NavLink></li>
-                            <li><NavLink to="/dashboard/reservations"><FaUtensils/> ADD ITEMS</NavLink></li>
-                            <li><NavLink to="/dashboard/history"><FaWallet/> MANAGE ITEMS</NavLink></li>
-                            <li><NavLink to="/dashboard/history"><FaBook/> MANAGE BOOKINGS</NavLink></li>
-                            <li><NavLink to="/dashboard/allusers"><FaUsers/> ALL USERS</NavLink></li>
-                            
+                            <li><NavLink to="/dashboard/home"><FaHome /> ADMIN HOME</NavLink></li>
+                            <li><NavLink to="/dashboard/additem"><FaUtensils /> ADD ITEMS</NavLink></li>
+                            <li><NavLink to="/dashboard/manageitem"><FaWallet /> MANAGE ITEMS</NavLink></li>
+                            <li><NavLink to="/dashboard/history"><FaBook /> MANAGE BOOKINGS</NavLink></li>
+                            <li><NavLink to="/dashboard/allusers"><FaUsers /> ALL USERS</NavLink></li>
+
 
                         </> : <>
 
